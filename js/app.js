@@ -8,12 +8,6 @@ const categories = [
     description: "Network Marketing",
   },
   {
-    key: "mlm",
-    title: "Habilidades de MLM",
-    icon: "🤝",
-    description: "Edificacion, cierres y seguimiento",
-  },
-  {
     key: "redes",
     title: "Redes Sociales",
     icon: "📱",
@@ -128,9 +122,17 @@ const videos = {
     {
       titulo: "Como promover en redes sociales",
       url: "https://www.youtube.com/embed/E9s7IlFueHk",
+      extras: [
+        {
+          label: "Drive de imagenes y videos",
+          url: "https://drive.google.com/drive/folders/1Yvh9w_-lCwu4QTAm9EXv1Ev1pfIYB43F?usp=sharing",
+        },
+        {
+          label: "Frases",
+          url: "https://drive.google.com/drive/u/0/folders/1nZZ2B8UW8nPbjrPc_-nEhVn-wNsKfCCf",
+        },
+      ],
     },
-  ],
-  mlm: [
     {
       titulo: "Como edificar",
       url: "https://www.youtube.com/embed/_M1FgSfxHSs",
@@ -319,8 +321,9 @@ function setMainVideo(video) {
 function updateVideoResource(video) {
   const resourceWrapper = document.getElementById("videoResource");
   const resourceLink = document.getElementById("videoResourceLink");
+  const extraActions = document.getElementById("videoExtraActions");
 
-  if (!resourceWrapper || !resourceLink) {
+  if (!resourceWrapper || !resourceLink || !extraActions) {
     return;
   }
 
@@ -328,12 +331,32 @@ function updateVideoResource(video) {
     resourceWrapper.hidden = true;
     resourceLink.href = "#";
     resourceLink.textContent = "Abrir recurso";
+  } else {
+    resourceLink.href = video.recurso.url;
+    resourceLink.textContent = video.recurso.label;
+    resourceWrapper.hidden = false;
+  }
+
+  if (!video.extras || !video.extras.length) {
+    extraActions.hidden = true;
+    extraActions.innerHTML = "";
     return;
   }
 
-  resourceLink.href = video.recurso.url;
-  resourceLink.textContent = video.recurso.label;
-  resourceWrapper.hidden = false;
+  extraActions.innerHTML = video.extras
+    .map(
+      (item) => `
+        <a
+          class="video-resource-link video-resource-link-secondary"
+          href="${item.url}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >${item.label}</a>
+      `,
+    )
+    .join("");
+
+  extraActions.hidden = false;
 }
 
 function bindVideoLoader() {

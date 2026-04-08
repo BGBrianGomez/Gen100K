@@ -51,6 +51,48 @@ body::before {
   opacity: 0.35;
 }
 
+body.home-main {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(122, 92, 255, 0.24), transparent 20%),
+    radial-gradient(circle at 78% 24%, rgba(50, 184, 255, 0.18), transparent 18%),
+    radial-gradient(circle at 26% 74%, rgba(80, 224, 180, 0.16), transparent 20%),
+    radial-gradient(circle at 84% 76%, rgba(122, 92, 255, 0.2), transparent 22%),
+    radial-gradient(circle at 52% 46%, rgba(255, 255, 255, 0.05), transparent 26%),
+    linear-gradient(180deg, #080912 0%, #0d1020 48%, #0a0d18 100%);
+}
+
+body.home-main::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(118deg, transparent 0 47%, rgba(116, 138, 255, 0.12) 47% 47.28%, transparent 47.28% 100%),
+    linear-gradient(62deg, transparent 0 53%, rgba(89, 214, 196, 0.1) 53% 53.22%, transparent 53.22% 100%),
+    linear-gradient(24deg, transparent 0 34%, rgba(151, 128, 255, 0.08) 34% 34.16%, transparent 34.16% 100%);
+  background-size: 42px 42px, 42px 42px, 100% 100%, 100% 100%, 100% 100%;
+  opacity: 0.6;
+}
+
+body.home-main::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(146deg, transparent 0 16%, rgba(255, 255, 255, 0.08) 16% 16.18%, transparent 16.18% 100%),
+    linear-gradient(112deg, transparent 0 36%, rgba(122, 92, 255, 0.12) 36% 36.18%, transparent 36.18% 100%),
+    linear-gradient(58deg, transparent 0 64%, rgba(80, 224, 180, 0.1) 64% 64.16%, transparent 64.16% 100%),
+    radial-gradient(circle at 14% 22%, rgba(255, 255, 255, 0.2) 0 4px, transparent 5px),
+    radial-gradient(circle at 28% 44%, rgba(255, 255, 255, 0.18) 0 4px, transparent 5px),
+    radial-gradient(circle at 40% 30%, rgba(80, 224, 180, 0.22) 0 5px, transparent 6px),
+    radial-gradient(circle at 58% 24%, rgba(255, 255, 255, 0.18) 0 4px, transparent 5px),
+    radial-gradient(circle at 74% 40%, rgba(50, 184, 255, 0.22) 0 5px, transparent 6px),
+    radial-gradient(circle at 82% 68%, rgba(255, 255, 255, 0.16) 0 4px, transparent 5px),
+    radial-gradient(circle at 34% 78%, rgba(122, 92, 255, 0.22) 0 5px, transparent 6px),
+    radial-gradient(circle at 66% 78%, rgba(80, 224, 180, 0.2) 0 5px, transparent 6px),
+    radial-gradient(circle at 50% 56%, rgba(255, 255, 255, 0.16) 0 4px, transparent 5px);
+  opacity: 0.92;
+}
+
 body.home-theme-gold {
   --panel: rgba(24, 18, 10, 0.84);
   --panel-strong: rgba(14, 10, 5, 0.94);
