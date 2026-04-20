@@ -202,6 +202,8 @@ const page = document.body.dataset.page;
 let videoLoaderTimeout = null;
 
 document.addEventListener("DOMContentLoaded", () => {
+  initContentProtection();
+
   if (page === "login") {
     initLogin();
     return;
@@ -218,6 +220,49 @@ document.addEventListener("DOMContentLoaded", () => {
     initCategory();
   }
 });
+
+function initContentProtection() {
+  document.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
+  document.addEventListener("dragstart", (event) => {
+    event.preventDefault();
+  });
+
+  document.addEventListener("selectstart", (event) => {
+    const target = event.target;
+
+    if (
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLTextAreaElement
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const blockedCtrlKeys = ["s", "u", "p"];
+    const blockedDevToolsKeys = ["i", "j", "c"];
+
+    if (event.key === "F12") {
+      event.preventDefault();
+      return;
+    }
+
+    if (event.ctrlKey && blockedCtrlKeys.includes(key)) {
+      event.preventDefault();
+      return;
+    }
+
+    if (event.ctrlKey && event.shiftKey && blockedDevToolsKeys.includes(key)) {
+      event.preventDefault();
+    }
+  });
+}
 
 function initLogin() {
   if (isAuthenticated()) {

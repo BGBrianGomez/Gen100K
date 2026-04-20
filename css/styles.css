@@ -25,6 +25,8 @@ body {
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
   color: var(--text);
+  -webkit-user-select: none;
+  user-select: none;
   background:
     radial-gradient(
       circle at top left,
@@ -183,6 +185,13 @@ button,
 input,
 iframe {
   font: inherit;
+}
+
+img,
+iframe,
+video {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 a {
