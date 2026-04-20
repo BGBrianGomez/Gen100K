@@ -24,66 +24,80 @@ const categories = [
 const videos = {
   redes: [
     {
-      titulo: "Como tener un perfil profesional en Instagram y tiktok",
-      url: "https://www.youtube.com/embed/TlrtkrtUJAU",
+      titulo: "Como tener un perfil profesional en Instagram, Tiktok y Wsp",
+      url: "https://www.youtube.com/embed/xcbvcjeQ9Tc",
     },
     {
-      titulo: "Como usar capcut para editar videos",
-      url: "https://www.youtube.com/embed/videoseries?list=PL7MhH1tJf6-uiomnsioy5gWVnRjET8zu8",
-    },
-    {
-      titulo: "Herramientas para grabar contenido y como grabar contenido",
+      titulo:
+        "Herramientas para grabar contenido: Como editar como un profesional",
       url: "https://www.youtube.com/embed/-z_qoTaCoiY",
     },
     {
-      titulo: "Plan de contenido Instagram",
+      titulo: "Plan de contenido para Instagram",
       url: "https://www.youtube.com/embed/N0ZPvD6lFmw?start=3183",
     },
     {
-      titulo: "Plan de contenido tiktok",
-      url: "https://www.youtube.com/embed/fwM532lWT6M",
+      titulo: "Plan de contenido para tiktok",
+      url: "https://www.youtube.com/embed/mXjzirH717s",
     },
     {
-      titulo: "Como ser viral en tiktok",
-      url: "https://www.youtube.com/embed/ScMzIvxBSi4",
+      titulo: "Como ser viral #1",
+      url: "https://www.youtube.com/embed/yYsk0h69FFQ",
     },
     {
-      titulo: "Como ser viral en instagram",
-      url: "https://www.youtube.com/embed/ysz5S6PUM-U",
+      titulo: "Como ser viral #2",
+      url: "https://www.youtube.com/embed/PXSMto4Zluw",
+    },
+    {
+      titulo: "Como ser viral #3",
+      url: "https://www.youtube.com/embed/5abIk3yWong",
+    },
+    {
+      titulo: "Como crear marca desde 0",
+      url: "https://www.youtube.com/embed/o0deC4qvYaA",
+    },
+    {
+      titulo: "Como crear flujo por tiktok Live",
+      url: "https://drive.google.com/file/d/1a-ZjBriZKt4Vo46psRz3Rv6ZFXOkv1gO/preview",
+    },
+    {
+      titulo: "Embudo de ventas 1",
+      url: "https://www.youtube.com/embed/PeA-j_eKT2M",
+    },
+    {
+      titulo: "Embudo de ventas 2",
+      url: "https://www.youtube.com/embed/2s3lL1INDOg",
     },
   ],
   publicidad: [
     {
-      titulo: "Como hacer anuncios en Facebook 1",
-      url: "https://www.youtube.com/embed/fn8L1ZQWXPI",
+      titulo: "Como configurar tu Facebook personal",
+      url: "https://www.youtube.com/embed/HaOf6LfwAuc",
     },
     {
-      titulo: "Como hacer anuncios en Facebook 2",
-      url: "https://www.youtube.com/embed/db4sTqWTHJ8?start=509",
+      titulo: "Como crear tu pagina de FB",
+      url: "https://www.youtube.com/embed/EQeeP-jlbSE?start=394",
     },
     {
-      titulo: "Como hacer anuncios en Facebook si hay evento en tu ciudad",
-      url: "https://www.youtube.com/embed/ysVQ_ChKSsg?start=1176",
+      titulo: "Como crear tu cuenta comercial",
+      url: "https://www.youtube.com/embed/xyiFDNCl1Mo?start=41",
     },
     {
-      titulo: "Como hacer anuncios en tiktok",
-      url: "https://www.youtube.com/embed/LjmfNTrEfLk",
+      titulo: "Como lanzar publicidad para traer prospectos en muchos paises",
+      url: "https://www.youtube.com/embed/9m2CDcbaeUs",
+    },
+    {
+      titulo:
+        "Como lanzar publicidad en Facebook Ads para eventos presenciales",
+      url: "https://www.youtube.com/embed/i9KczCgqVUQ?start=155",
+    },
+    {
+      titulo: "Como tener 20 invitados en eventos presenciales",
+      url: "https://www.youtube.com/embed/2op48ThAdp4",
     },
     {
       titulo: "Como hacer anuncios en Instagram",
-      url: "https://www.youtube.com/embed/WnqS30mNLxs",
-    },
-    {
-      titulo: "Sistema para firmar",
-      url: "https://www.youtube.com/embed/ba6WEMzKf1g",
-    },
-    {
-      titulo: "Como tener un buen embudo 1",
-      url: "https://www.youtube.com/embed/2s3lL1INDOg",
-    },
-    {
-      titulo: "Como tener un buen embudo 2",
-      url: "https://www.youtube.com/embed/33DABPlj0I4?start=3215",
+      url: "https://www.youtube.com/embed/WnqS30mNLxs?start=24",
     },
   ],
   nuevos: [
@@ -92,12 +106,12 @@ const videos = {
       url: "https://www.youtube.com/embed/L11aUY7uVlQ?start=1243",
     },
     {
-      titulo: "Plan de compensacion",
+      titulo: "Plan de compensacion nivel pollito",
       url: "https://www.youtube.com/embed/sHExOdSiCaQ?start=889",
     },
     {
       titulo: "Porque es importante tener metas",
-      url: "https://www.youtube.com/embed/fkzOWwiLczI",
+      url: "https://www.youtube.com/embed/sMSmQ3aqkOM",
     },
     {
       titulo: "Plan de 15 dias para ganar 1000$",
@@ -110,6 +124,10 @@ const videos = {
         label: "AGILICADOR DE MEMORIA",
         url: "https://drive.google.com/file/d/13ML0821miGl2vmL5ZJMneR3ao0mGeuyJ/view?usp=sharing",
       },
+    },
+    {
+      titulo: "Como hacer lanzamiento efectivo",
+      url: "https://www.youtube.com/embed/MhejNYVX-Cg",
     },
     {
       titulo: "Como invitar de forma efectiva a mi lista",
@@ -142,16 +160,12 @@ const videos = {
       url: "https://www.youtube.com/embed/gS3QFhLAu6w?start=635",
     },
     {
-      titulo: "Presentacion de lanzamiento",
-      url: "https://www.youtube.com/embed/OexzTJQyZmE?start=2278",
-    },
-    {
       titulo: "Presentacion corta",
-      url: "https://www.youtube.com/embed/aqz-KE-bpKQ",
+      url: "https://www.youtube.com/embed/ym49f3vk6u4",
     },
     {
       titulo: "Presentacion pro",
-      url: "https://www.youtube.com/embed/ysz5S6PUM-U",
+      url: "https://www.youtube.com/embed/rlXpK-J2y7c",
     },
     {
       titulo: "Como hacer un cierre nivel pollito",
@@ -170,8 +184,16 @@ const videos = {
       url: "https://www.youtube.com/embed/lXb0SGxJXyA",
     },
     {
+      titulo: "Lleva un orden para tus prospectos",
+      url: "https://www.youtube.com/embed/gK2UhIyGgPw",
+    },
+    {
       titulo: "Duplicacion y promover eventos",
-      url: "https://www.youtube.com/embed/jNQXAC9IVRw",
+      url: "https://www.youtube.com/embed/TWnJ6HGFWQI",
+    },
+    {
+      titulo: "Plan de compensacion completo",
+      url: "https://www.youtube.com/embed/K2jXopxT8Gc",
     },
   ],
 };
