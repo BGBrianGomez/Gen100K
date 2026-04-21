@@ -700,6 +700,8 @@ a {
 .category-card-upcoming {
   cursor: default;
   opacity: 0.72;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .category-card-upcoming:hover {
@@ -711,6 +713,7 @@ a {
 .category-badge {
   display: inline-flex;
   align-self: flex-start;
+  margin-top: 10px;
   padding: 8px 12px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);

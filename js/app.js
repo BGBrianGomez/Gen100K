@@ -23,7 +23,6 @@ const categories = [
     key: "fwp",
     title: "FWP",
     icon: "🧠",
-    description: "Bienestar, salud y linea de productos",
     upcoming: true,
   },
 ];
@@ -307,9 +306,8 @@ function initHome() {
           <div class="category-icon">${category.icon}</div>
           <div>
             <h3>${category.title}</h3>
-            <span>${category.description}</span>
+            ${category.upcoming ? '<div class="category-badge">Proximamente</div>' : `<span>${category.description}</span>`}
           </div>
-          ${category.upcoming ? '<div class="category-badge">Proximamente</div>' : ""}
         </article>
       `,
     )
