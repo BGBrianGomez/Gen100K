@@ -19,6 +19,13 @@ const categories = [
     icon: "🎯",
     description: "Campanas, anuncios y conversion",
   },
+  {
+    key: "fwp",
+    title: "FWP",
+    icon: "🧠",
+    description: "Bienestar, salud y linea de productos",
+    upcoming: true,
+  },
 ];
 
 const videos = {
@@ -100,6 +107,7 @@ const videos = {
       url: "https://www.youtube.com/embed/WnqS30mNLxs?start=24",
     },
   ],
+  fwp: [],
   nuevos: [
     {
       titulo: "Porque hacer network marketing",
@@ -295,18 +303,23 @@ function initHome() {
   grid.innerHTML = categories
     .map(
       (category) => `
-        <article class="category-card" data-category="${category.key}" tabindex="0" role="button" aria-label="Abrir ${category.title}">
+        <article class="category-card ${category.upcoming ? "category-card-upcoming" : ""}" data-category="${category.key}" ${category.upcoming ? "" : 'tabindex="0" role="button"'} aria-label="${category.upcoming ? `${category.title} proximamente` : `Abrir ${category.title}`}">
           <div class="category-icon">${category.icon}</div>
           <div>
             <h3>${category.title}</h3>
             <span>${category.description}</span>
           </div>
+          ${category.upcoming ? '<div class="category-badge">Proximamente</div>' : ""}
         </article>
       `,
     )
     .join("");
 
   grid.querySelectorAll(".category-card").forEach((card) => {
+    if (card.classList.contains("category-card-upcoming")) {
+      return;
+    }
+
     card.addEventListener("click", () => {
       const key = card.dataset.category;
       window.location.href = `categoria.html?tipo=${encodeURIComponent(key)}`;
@@ -337,11 +350,14 @@ function initCategory() {
   bindVideoLoader();
 
   if (!playlist.length) {
-    document.getElementById("mainVideoTitle").textContent =
-      "No hay videos cargados";
+    const isUpcomingCategory = category.key === "fwp";
+
+    document.getElementById("mainVideoTitle").textContent = isUpcomingCategory
+      ? "PROXIMAMENTE"
+      : "No hay videos cargados";
     document.getElementById("mainVideo").src = "";
     hideVideoLoader();
-    videoList.innerHTML = `<div class="empty-state">Esta categoria no tiene videos todavia.</div>`;
+    videoList.innerHTML = `<div class="empty-state">${isUpcomingCategory ? "Contenido disponible muy pronto." : "Esta categoria no tiene videos todavia."}</div>`;
     return;
   }
 
