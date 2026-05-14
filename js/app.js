@@ -23,7 +23,7 @@ const categories = [
     key: "fwp",
     title: "FWP",
     icon: "🧠",
-    upcoming: true,
+    description: "Productos, consumo y soporte de presentacion",
   },
 ];
 
@@ -106,7 +106,28 @@ const videos = {
       url: "https://www.youtube.com/embed/WnqS30mNLxs?start=24",
     },
   ],
-  fwp: [],
+  fwp: [
+    {
+      titulo: "La importancia de consumir los productos",
+      url: "https://www.youtube.com/embed/yDcBCrZ1Lns",
+    },
+    {
+      titulo: "Aprende mas sobre el Renova +",
+      url: "https://www.youtube.com/embed/fKMDsKjBbtM",
+    },
+    {
+      titulo: "Aprende mas sobre el LIV",
+      url: "https://www.youtube.com/embed/maEJg6iuKJ8",
+    },
+    {
+      titulo: "Aprende mas sobre el 24 BURN +",
+      url: "https://www.youtube.com/embed/CvnCnkVhhqk",
+    },
+    {
+      titulo: "Aprende mas sobre el OMEGA 360",
+      url: "https://www.youtube.com/embed/F-4mzBvgEHo",
+    },
+  ],
   nuevos: [
     {
       titulo: "Porque hacer network marketing",
