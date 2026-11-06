@@ -74,6 +74,14 @@ const videos = {
       titulo: "Embudo de ventas 2",
       url: "https://www.youtube.com/embed/2s3lL1INDOg",
     },
+    {
+      titulo: "Cómo tener prospectos por TikTok Live",
+      url: "https://www.youtube.com/embed/d7rK1H2h9pM",
+    },
+    {
+      titulo: "Cómo mejorar en redes sociales",
+      url: "https://www.youtube.com/embed/Pl9i87vKlV0",
+    },
   ],
   publicidad: [
     {
@@ -126,6 +134,30 @@ const videos = {
     {
       titulo: "Aprende mas sobre el OMEGA 360",
       url: "https://www.youtube.com/embed/F-4mzBvgEHo",
+    },
+    {
+      titulo: "Cómo funcionan los LifeClub y bonos de FWP",
+      url: "https://www.youtube.com/embed/l9ckYhOOxb8",
+    },
+    {
+      titulo: "Taller de redes sociales para FWP",
+      url: "https://www.youtube.com/embed/_10A0DzUOxQ",
+    },
+    {
+      titulo: "Taller de TikTok Live para FWP",
+      url: "https://www.youtube.com/embed/4ToOPeiOYcU",
+    },
+    {
+      titulo: "Cómo cerrar de manera profesional",
+      url: "https://www.youtube.com/embed/2T035JZEsVY",
+    },
+    {
+      titulo: "Publicidad y ventas FWP (omitir lo de Mercado Libre)",
+      url: "https://www.youtube.com/embed/Ja3cNPgcsws",
+    },
+    {
+      titulo: "Maestría en FWP (aumenta tus ventas)",
+      url: "https://www.youtube.com/embed/DsSGSI7Pgtg",
     },
   ],
   nuevos: [
